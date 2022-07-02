@@ -12,6 +12,11 @@ public class PersonHandler {
 
     public String whileLoop() {
         String result = "";
+        int arrayCounter = 0;
+        while (arrayCounter < getPersonArray().length) {
+            result += personArray[arrayCounter].toString();
+            arrayCounter++;
+        }
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
@@ -28,6 +33,9 @@ public class PersonHandler {
 
     public String forLoop() {
         String result = "";
+        for (int i = 0; i < personArray.length; i++) {
+            result += personArray[i].toString();
+        }
         // identify initial value
         // identify terminal condition
         // identify increment
@@ -46,6 +54,11 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
+        int counter = 0;
+        for (Person person : personArray) {
+            result += personArray[counter].toString();
+            counter++;
+        }
         // identify array's type
         // identify array's variable-name
 
