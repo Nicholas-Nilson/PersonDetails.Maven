@@ -14,7 +14,7 @@ public class PersonHandler {
         String result = "";
         int arrayCounter = 0;
         while (arrayCounter < getPersonArray().length) {
-            result += personArray[arrayCounter].toString();
+            result += personArray[arrayCounter];
             arrayCounter++;
         }
         // create a `counter`
@@ -34,7 +34,7 @@ public class PersonHandler {
     public String forLoop() {
         String result = "";
         for (int i = 0; i < personArray.length; i++) {
-            result += personArray[i].toString();
+            result += personArray[i];  //.toString() is in the method in Person class.
         }
         // identify initial value
         // identify terminal condition
@@ -56,7 +56,7 @@ public class PersonHandler {
         String result = "";
         int counter = 0;
         for (Person person : personArray) {
-            result += personArray[counter].toString();
+            result += personArray[counter];
             counter++;
         }
         // identify array's type
