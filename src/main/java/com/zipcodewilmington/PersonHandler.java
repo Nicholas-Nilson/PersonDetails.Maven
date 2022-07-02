@@ -56,8 +56,7 @@ public class PersonHandler {
         String result = "";
         int counter = 0;
         for (Person person : personArray) {
-            result += personArray[counter];
-            counter++;
+            result += person;
         }
         // identify array's type
         // identify array's variable-name
